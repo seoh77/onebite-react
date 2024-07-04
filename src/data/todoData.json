@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "content": "프로젝트 세팅",
+      "date": "2024/07/03",
+      "done": true
+    },
+    {
+      "content": "퍼블리싱",
+      "date": "2024/07/04",
+      "done": false
+    },
+    {
+      "content": "Todo 기능 구현",
+      "date": "2024/07/06",
+      "done": false
+    },
+    {
+      "content": "서버 통신",
+      "date": "2024/07/07",
+      "done": false
+    },
+    {
+      "content": "페이지 이동 구현",
+      "date": "2024/07/08",
+      "done": false
+    }
+  ]
+}
