@@ -1,10 +1,12 @@
+import { Provider } from 'react-redux';
 import Main from './pages/Main.jsx';
+import store from './commons/store.js';
 
 function App() {
   return (
-    <div className="p-10">
+    <Provider store={store} className="p-10">
       <Main />
-    </div>
+    </Provider>
   );
 }
 
