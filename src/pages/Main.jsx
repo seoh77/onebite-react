@@ -1,15 +1,18 @@
 import TodoInput from './TodoInput.jsx';
 import TodoItem from './TodoItem.jsx';
 
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
+import React from 'react';
+import { useGetTodosQuery } from '../commons/store.js';
 
 function Main() {
+  const { data = {} } = useGetTodosQuery();
+  const todos = data.todos || [];
+
   const today = new Date();
   const year = today.getFullYear();
   const month = today.getMonth() + 1;
   const day = today.getDate();
-
-  const todos = useSelector((state) => state.todos);
 
   return (
     <>

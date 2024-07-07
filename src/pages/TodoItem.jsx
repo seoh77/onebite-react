@@ -7,7 +7,8 @@ import { delete_todo, check_todo } from '../commons/actions';
 const TodoItem = ({ todo }) => {
   const dispatch = useDispatch();
 
-  const { id, title, isComplete } = todo;
+  const { id, isComplete } = todo;
+  const title = todo.todo;
 
   const handleClick = () => {
     dispatch(delete_todo(id));
